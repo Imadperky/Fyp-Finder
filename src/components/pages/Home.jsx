@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Home = () => {
+  const [showHowItWorks, setShowHowItWorks] = useState(false);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-8">
       <div className="max-w-4xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
@@ -37,14 +39,36 @@ const Home = () => {
               </button>
             </div>
             <div className="w-full sm:w-auto">
-              <button className="w-full px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10 transition duration-300">
+              <button
+                onClick={() => setShowHowItWorks(!showHowItWorks)}
+                className="w-full px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10 transition duration-300"
+              >
                 How It Works
               </button>
             </div>
           </div>
         </div>
 
+        {showHowItWorks && (
+          <div className="mt-10 bg-white rounded-lg shadow-lg p-6 text-left text-gray-700 max-w-3xl mx-auto transition duration-500 ease-in-out transform animate-fade-in">
+            <h2 className="text-2xl font-semibold text-indigo-600 mb-4">How It Works</h2>
+            <p className="mb-3">
+              1. <strong>Explore Profiles:</strong> View supervisor profiles based on your area of interest.
+            </p>
+            <p className="mb-3">
+              2. <strong>Send Request:</strong> Reach out to supervisors whose research aligns with your project idea.
+            </p>
+            <p className="mb-3">
+              3. <strong>Get Matched:</strong> Once accepted, start collaborating on your FYP with their support.
+            </p>
+            <p>
+              Our platform ensures that you connect with the most relevant and experienced supervisors to enhance your academic journey.
+            </p>
+          </div>
+        )}
+
         <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-3">
+          {/* Step 1 */}
           <div className="pt-6">
             <div className="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full transform transition hover:-translate-y-2">
               <div className="-mt-6">
@@ -58,7 +82,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-
+          {/* Step 2 */}
           <div className="pt-6">
             <div className="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full transform transition hover:-translate-y-2">
               <div className="-mt-6">
@@ -72,7 +96,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-
+          {/* Step 3 */}
           <div className="pt-6">
             <div className="flow-root bg-white rounded-lg px-6 pb-8 shadow-lg h-full transform transition hover:-translate-y-2">
               <div className="-mt-6">
