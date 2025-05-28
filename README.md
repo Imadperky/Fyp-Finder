@@ -1,8 +1,44 @@
-# React + Vite
+# Fyp Finder
+# FYP Supervisor Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application designed to help students find and connect with suitable supervisors for their Final Year Projects (FYP), based on research interests, availability, and expertise.
 
-Currently, two official plugins are available:
+## 🧑‍💼 Admin Credentials
+
+To log in as an admin and manage supervisors, students, and system data:
+
+
+---
+
+## 🚀 Features
+
+### 👨‍🏫 Supervisor Module
+- View list of available supervisors
+- Filter by research interests or department
+
+### 🎓 Student Module
+- Register and create a profile
+- Search for supervisors by keyword or tag
+- Request supervision from a selected list
+
+### ⚙️ Admin Panel
+- Add/edit/delete supervisors and student accounts
+- Set supervisor availability and supervision limits
+
+### 🔍 Search and Filter
+- Department-based filtering
+- Interest/topic matching
+
+### 🔔 Notifications
+- Email notifications on request submission and acceptance
+- Dashboard alerts for pending approvals
+
+---
+
+
+
+
+
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
