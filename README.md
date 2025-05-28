@@ -37,7 +37,7 @@ To log in as an admin and manage supervisors, students, and system data:
 
 ### 1. Clone the Repository
 ```bash
-
+https://github.com/Imadperky/Fyp-Finder.git
 
 
 
