@@ -1,4 +1,4 @@
-# Fyp Finder
+
 # FYP Supervisor Finder
 
 A web application designed to help students find and connect with suitable supervisors for their Final Year Projects (FYP), based on research interests, availability, and expertise.
@@ -35,6 +35,8 @@ To log in as an admin and manage supervisors, students, and system data:
 
 ---
 
+### 1. Clone the Repository
+```bash
 
 
 
